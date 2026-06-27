@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato | Comunidade do Reino</title>
+    <meta name="description" content="Canais de contato oficiais da Comunidade do Reino." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Voltar para página inicial">
+          <img class="brand-logo-img" src="logo.jpg" alt="" aria-hidden="true" />
+          <span class="brand-text">Comunidade do Reino</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+        <nav id="menu-principal" class="main-nav" aria-label="Principal">
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="biblioteca.html">Biblioteca</a>
+          <a href="metodologia.html">Metodologia</a>
+          <a href="voluntario.html">Faça Parte</a>
+          <a href="contato.html" aria-current="page">Contato</a>
+          <a class="nav-cta" href="voluntario.html">Seja Voluntário</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="shell">
+      <section class="page-hero">
+        <h1>Contato da Comunidade</h1>
+        <p>Todos os canais oficiais para atendimento humano, parceria, suporte e participação voluntária.</p>
+      </section>
+
+      <section class="section">
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Atendimento principal</h3>
+            <p>WhatsApp oficial: +55 (69) 98473-4129</p>
+            <div class="inline-links">
+              <a class="btn btn-primary" href="https://wa.me/5569984734129" target="_blank" rel="noopener">Abrir WhatsApp</a>
+            </div>
+          </article>
+          <article class="contact-card">
+            <h3>E-mail institucional</h3>
+            <p>comunidadedoreino001@gmail.com</p>
+            <div class="inline-links">
+              <a class="btn btn-dark" href="mailto:comunidadedoreino001@gmail.com">Enviar e-mail</a>
+            </div>
+          </article>
+          <article class="contact-card">
+            <h3>Redes sociais</h3>
+            <p>Instagram, TikTok e Facebook com atualizações do projeto.</p>
+            <div class="inline-links">
+              <a href="https://instagram.com/comunidadedoreino001" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.tiktok.com/@marthot.oficial" target="_blank" rel="noopener">TikTok</a>
+              <a href="https://facebook.com/mart.hotoficial" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </article>
+          <article class="contact-card">
+            <h3>Parcerias e apoios</h3>
+            <p>Para instituições e empresas interessadas em apoiar ações comunitárias de escrita e publicação.</p>
+            <div class="inline-links">
+              <a class="btn btn-primary" href="https://wa.me/5569984734129?text=Ol%C3%A1!%20Tenho%20interesse%20em%20falar%20sobre%20parceria%20com%20a%20Comunidade%20do%20Reino." target="_blank" rel="noopener">Solicitar reunião</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell"><p>© <span id="year"></span> Comunidade do Reino.</p></div></footer>
+    <script src="pages.js"></script>
+    <script>document.getElementById('year').textContent = String(new Date().getFullYear());</script>
+  </body>
+</html>

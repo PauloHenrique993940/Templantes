@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Faça Parte | Comunidade do Reino</title>
+    <meta name="description" content="Página de voluntariado com informações, cadastro, login e acesso administrativo simulado." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Voltar para página inicial">
+          <img class="brand-logo-img" src="logo.jpg" alt="" aria-hidden="true" />
+          <span class="brand-text">Comunidade do Reino</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+        <nav id="menu-principal" class="main-nav" aria-label="Principal">
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="biblioteca.html">Biblioteca</a>
+          <a href="metodologia.html">Metodologia</a>
+          <a href="voluntario.html" aria-current="page">Faça Parte</a>
+          <a href="contato.html">Contato</a>
+          <a class="nav-cta" href="voluntario.html">Seja Voluntário</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="shell">
+      <section class="page-hero">
+        <h1>Faça Parte e Seja Voluntário</h1>
+        <p>Aqui estão todas as informações de voluntariado reunidas: áreas de atuação, processo de entrada, cadastro, login e acesso à área administrativa simulada.</p>
+      </section>
+
+      <section class="section">
+        <div class="volunteer-grid">
+          <article class="list-card">
+            <h3>Informações para voluntários</h3>
+            <ul>
+              <li>Áreas de atuação: revisão, mentoria, acolhimento e organização editorial.</li>
+              <li>Formato: atuação remota com agenda de acordo com disponibilidade.</li>
+              <li>Critérios: comunicação respeitosa, compromisso e ética comunitária.</li>
+              <li>Fluxo: cadastro, validação interna e entrada em trilhas de apoio.</li>
+            </ul>
+            <div class="inline-links">
+              <a class="btn btn-dark" href="admin.html">Abrir área administrativa</a>
+            </div>
+          </article>
+
+          <article class="form-card">
+            <h2>Cadastro de voluntário</h2>
+            <form id="form-cadastro" class="form-grid">
+              <label>Nome completo
+                <input type="text" name="nome" required />
+              </label>
+              <label>E-mail
+                <input type="email" name="email" required />
+              </label>
+              <label>Senha
+                <input type="password" name="senha" required />
+              </label>
+              <label>Área de atuação
+                <select name="area" required>
+                  <option value="">Selecione</option>
+                  <option value="Revisão">Revisão</option>
+                  <option value="Mentoria">Mentoria</option>
+                  <option value="Acolhimento">Acolhimento</option>
+                  <option value="Organização editorial">Organização editorial</option>
+                </select>
+              </label>
+              <button class="btn btn-primary" type="submit">Cadastrar</button>
+              <p id="cadastro-status" class="status" aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <article class="form-card">
+          <h2>Login do voluntário</h2>
+          <form id="form-login" class="form-grid">
+            <label>E-mail
+              <input type="email" name="email" required />
+            </label>
+            <label>Senha
+              <input type="password" name="senha" required />
+            </label>
+            <button class="btn btn-dark" type="submit">Entrar</button>
+            <p id="login-status" class="status" aria-live="polite"></p>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell"><p>© <span id="year"></span> Comunidade do Reino.</p></div></footer>
+    <script src="pages.js"></script>
+    <script src="voluntario.js"></script>
+    <script>document.getElementById('year').textContent = String(new Date().getFullYear());</script>
+  </body>
+</html>

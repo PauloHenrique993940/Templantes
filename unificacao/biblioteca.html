@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biblioteca Digital | Comunidade do Reino</title>
+    <meta name="description" content="Simulação da Biblioteca Digital da Comunidade do Reino com livros e acervo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Voltar para página inicial">
+          <img class="brand-logo-img" src="logo.jpg" alt="" aria-hidden="true" />
+          <span class="brand-text">Comunidade do Reino</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+        <nav id="menu-principal" class="main-nav" aria-label="Principal">
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="biblioteca.html" aria-current="page">Biblioteca</a>
+          <a href="metodologia.html">Metodologia</a>
+          <a href="voluntario.html">Faça Parte</a>
+          <a href="contato.html">Contato</a>
+          <a class="nav-cta" href="voluntario.html">Seja Voluntário</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="shell">
+      <section class="page-hero">
+        <h1>Biblioteca Digital (Simulação)</h1>
+        <p>Acervo demonstrativo com livros publicados pela rede. Você pode pesquisar por título ou autor para simular a navegação da biblioteca.</p>
+      </section>
+
+      <section class="section">
+        <input id="book-search" class="book-search" type="search" placeholder="Pesquisar livro ou autor" aria-label="Pesquisar livro ou autor" />
+        <div class="books-grid">
+          <article class="book-card" data-title="Vozes da Rua" data-author="Maria Luzia">
+            <span class="book-meta">Biografia</span>
+            <strong>Vozes da Rua</strong>
+            <p>Maria Luzia</p>
+          </article>
+          <article class="book-card" data-title="Menino Autor" data-author="João Silva">
+            <span class="book-meta">Infantojuvenil</span>
+            <strong>Menino Autor</strong>
+            <p>João Silva</p>
+          </article>
+          <article class="book-card" data-title="Herança de Ariston" data-author="Ana Costa">
+            <span class="book-meta">Memórias</span>
+            <strong>Herança de Ariston</strong>
+            <p>Ana Costa</p>
+          </article>
+          <article class="book-card" data-title="Escrevendo Recomeços" data-author="Rita Alves">
+            <span class="book-meta">Desenvolvimento</span>
+            <strong>Escrevendo Recomeços</strong>
+            <p>Rita Alves</p>
+          </article>
+          <article class="book-card" data-title="Palavras de Resistência" data-author="Carlos Dias">
+            <span class="book-meta">Social</span>
+            <strong>Palavras de Resistência</strong>
+            <p>Carlos Dias</p>
+          </article>
+          <article class="book-card" data-title="Cartas para o Futuro" data-author="Nina Rocha">
+            <span class="book-meta">Cartas</span>
+            <strong>Cartas para o Futuro</strong>
+            <p>Nina Rocha</p>
+          </article>
+          <article class="book-card" data-title="Escola da Vida" data-author="Paulo Neri">
+            <span class="book-meta">Educação</span>
+            <strong>Escola da Vida</strong>
+            <p>Paulo Neri</p>
+          </article>
+          <article class="book-card" data-title="Raízes do Meu Bairro" data-author="Coletivo Reino">
+            <span class="book-meta">Coletânea</span>
+            <strong>Raízes do Meu Bairro</strong>
+            <p>Coletivo Reino</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <article class="list-card">
+          <h3>Fluxo da biblioteca</h3>
+          <ul>
+            <li>Recebimento da obra finalizada pela equipe editorial.</li>
+            <li>Catalogação por categoria, autor e palavras-chave.</li>
+            <li>Publicação digital e compartilhamento para comunidade.</li>
+            <li>Atualização contínua com novos lançamentos.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell"><p>© <span id="year"></span> Comunidade do Reino.</p></div></footer>
+    <script src="pages.js"></script>
+    <script>document.getElementById('year').textContent = String(new Date().getFullYear());</script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Metodologia | Comunidade do Reino</title>
+    <meta name="description" content="Conheça todas as metodologias aplicadas pela Comunidade do Reino." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Voltar para página inicial">
+          <img class="brand-logo-img" src="logo.jpg" alt="" aria-hidden="true" />
+          <span class="brand-text">Comunidade do Reino</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+        <nav id="menu-principal" class="main-nav" aria-label="Principal">
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="biblioteca.html">Biblioteca</a>
+          <a href="metodologia.html" aria-current="page">Metodologia</a>
+          <a href="voluntario.html">Faça Parte</a>
+          <a href="contato.html">Contato</a>
+          <a class="nav-cta" href="voluntario.html">Seja Voluntário</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="shell">
+      <section class="page-hero">
+        <h1>Metodologias da Comunidade</h1>
+        <p>Nossa metodologia integra acolhimento humano, organização editorial e rede voluntária para garantir evolução real de cada participante.</p>
+      </section>
+
+      <section class="section">
+        <div class="list-stack">
+          <article class="list-card">
+            <h3>1) Diagnóstico Inicial</h3>
+            <ul>
+              <li>Escuta estruturada sobre história, objetivos e dificuldades.</li>
+              <li>Levantamento de contexto social e disponibilidade de tempo.</li>
+              <li>Definição de prioridade e plano de apoio individual.</li>
+            </ul>
+          </article>
+          <article class="list-card">
+            <h3>2) Trilha Editorial</h3>
+            <ul>
+              <li>Construção de estrutura narrativa por etapas.</li>
+              <li>Produção orientada por metas simples e alcançáveis.</li>
+              <li>Revisão contínua para qualidade textual e coerência.</li>
+            </ul>
+          </article>
+          <article class="list-card">
+            <h3>3) Mentoria e Revisão Solidária</h3>
+            <ul>
+              <li>Conexão com voluntários por perfil de necessidade.</li>
+              <li>Acompanhamento por mentoria com devolutivas práticas.</li>
+              <li>Validação final para publicação digital.</li>
+            </ul>
+          </article>
+          <article class="list-card">
+            <h3>4) Publicação e Legado</h3>
+            <ul>
+              <li>Preparação técnica da obra para ambiente digital.</li>
+              <li>Inserção no acervo da biblioteca da comunidade.</li>
+              <li>Orientação de continuidade para novos projetos autorais.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell"><p>© <span id="year"></span> Comunidade do Reino.</p></div></footer>
+    <script src="pages.js"></script>
+    <script>document.getElementById('year').textContent = String(new Date().getFullYear());</script>
+  </body>
+</html>
